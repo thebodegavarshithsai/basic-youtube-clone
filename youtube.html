@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>You Tube Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="youtube.css">
+        <link rel="stylesheet" href="shorts.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+    <!-- header -->
+      <div class="header">
+    <!-- left-section -->
+        <div class="left-section">
+         <img class="hamburger-menu"  src="header-icons/hamburger-menu.svg">
+         <img class="youtube-logo" src="header-icons/youtube-logo.svg">
+         <p class="in">IN</p>
+        </div>
+
+    <!-- left-section -->
+
+    <!-- middle-section -->
+        <div class="middle-section"> 
+          <input type="text" placeholder="Search"  class="search-bar">
+          <button class="search-button">
+            <img class="search-icon" src="header-icons/search.svg">
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="voice-search-button">
+            <img class="voice-search-icon" src="header-icons/voice-search-icon.svg">
+            <div class="tooltip">Search with your voice</div>
+          </button>
+        </div>
+    <!-- middle-section -->
+
+    <!-- right-section -->
+        <div class="right-section">
+          <div class="upload-icon-container">
+            <img class="upload-icon" src="header-icons/upload.svg">
+            <div class="tooltip">Create</div>
+          </div>
+          <div class="youtube-apps-container">
+            <img class="youtube-apps-icon" src="header-icons/youtube-apps.svg">
+            <div class="tooltip">YouTube Apps</div>
+          </div>
+          <div class="notifications-icon-container">
+            <img class="notifications-icon"     src="header-icons/notifications.svg">
+            <div class="notifications-count">9+</div>
+            <div class="tooltip">Notifications</div>
+          </div>
+          <img class="current-user-picture" src="header-icons/unnamed.jpg">
+        </div>
+      </div>
+    <!-- right-section -->
+    <!-- header -->
+
+    <!-- sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-link">
+          <img src="sidebar-icons/home.svg">
+          <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar-icons/explore.svg">
+          <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar-icons/subscriptions.svg">
+          <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar-icons/originals.svg">
+          <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar-icons/youtube-music.svg">
+          <div style="font-size: 9px;">YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar-icons/library.svg">
+          <div>Library</div>
+        </div>
+      </div>
+    <!-- sidebar -->
+    
+  <!-- main-body -->
+       <div class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+            <!-- <a href="https://www.youtube.com/watch?v=PUACpIf-Dc0" target="_blank">
+              <img class="thumbnail" src="youtube-images/madurastakam.webp"  >
+            </a> -->
+            <iframe   class="thumbnail" src="https://www.youtube.com/embed/PUACpIf-Dc0?si=Js4FbZjCCCl-8SPt&loop=1&end=55&mute=1&playlist=PUACpIf-Dc0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-time">6:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@beingkrishnaconscious/videos" target="_blank">
+                <img class="profile-picture" src="channel-profile/beingkrishna.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=PUACpIf-Dc0" target="_blank">
+                <p class="video-title">Kartik Month Dhamaka💥 DAMODARASHTAKAM  || दामोदर अष्टकम</p>
+              </a>
+              <a href="https://www.youtube.com/@beingkrishnaconscious/videos" target="_blank">
+                <p class="video-author">Being Krishna Conscious</p>
+              </a>
+              <p class="video-stats">38K views &middot; 3 months ago</p>
+            </div>
+          </div>
+         </div>
+         <div class="video-preview">
+          <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+            <!-- <a href="https://www.youtube.com/watch?v=0_3dRD7jJpE" target="_blank">
+              <img class="thumbnail"  src="youtube-images/ramayenge.webp"  >
+            </a> -->
+            <iframe class="thumbnail" src="https://www.youtube.com/embed/0_3dRD7jJpE?si=ARm3wpgEQl8mSl8Y&mute=1&loop=1&playlist=0_3dRD7jJpE&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-time">8:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@beingkrishnaconscious/videos" target="_blank">
+                <img class="profile-picture" src="channel-profile/beingkrishna.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=0_3dRD7jJpE" target="_blank">
+                <p class="video-title">Ram Ayenge Music Video | Ram Bhajan | Meri Jhopdi Ke Bhaag | Ram Mandir Ayodhya</p>
+              </a>
+              <a href="https://www.youtube.com/@beingkrishnaconscious/videos" target="_blank">
+                <p class="video-author">Being Krishna Conscious</p>
+              </a>
+              <p class="video-stats">29K views &middot; 3 weeks ago</p>
+            </div>
+          </div>
+       </div>
+       <div class="video-preview">
+        <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)" >
+          <!-- <a href="https://www.youtube.com/watch?v=Q4VfF_eDkZY" target="_blank">
+            <img class="thumbnail" src="youtube-images/radha1.webp"  >
+          </a> -->
+          <iframe class="thumbnail" src="https://www.youtube.com/embed/Q4VfF_eDkZY?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=Q4VfF_eDkZY&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="video-time">3:52</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@StarBharat" target="_blank">
+              <img class="profile-picture" src="channel-profile/radha1-prof.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=Q4VfF_eDkZY" target="_blank">
+              <p class="video-title">#राधाकृष्ण | राधा-कृष्ण की अद्भुत रासलीला</p>
+            </a>
+            <a href="https://www.youtube.com/@StarBharat" target="_blank">
+              <p class="video-author">STAR भारत</p>
+            </a>
+            <p class="video-stats">104M views &middot; 5 year sago</p>
+          </div>
+        </div>
+       </div>
+       <div class="video-preview">
+        <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+          <!-- <a href="https://www.youtube.com/watch?v=Fpm1QreFSDQ" target="_blank">
+            <img class="thumbnail" src="youtube-images/radhakrishna-naamwali chant.webp"  >
+          </a> -->
+          <iframe class="thumbnail" src="https://www.youtube.com/embed/Fpm1QreFSDQ?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=Fpm1QreFSDQ&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="video-time">16:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@MOhitLalwaniOfficial" target="_blank">
+              <img class="profile-picture" src="channel-profile/ML records.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=Fpm1QreFSDQ" target="_blank">
+              <p class="video-title">Tum Prem Ho | Nat Naagar Chant | Long Version | RadhaKrishna | MOhit Lalwani | Reprise</p>
+            </a>
+            <a href="https://www.youtube.com/@MOhitLalwaniOfficial" target="_blank">
+              <p class="video-author">ML Records</p>
+            </a>
+            <p class="video-stats">5.8M views &middot; 4 years ago</p>
+          </div>
+        </div>
+     </div>
+     <div class="video-preview">
+      <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+        <!-- <a href="https://www.youtube.com/watch?v=jOst7Trpj7o" target="_blank">
+          <img class="thumbnail" src="youtube-images/arjunreddy-breakup.webp"  >
+        </a> -->
+        <iframe class="thumbnail" src="https://www.youtube.com/embed/jOst7Trpj7o?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=jOst7Trpj7o&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-time">6:29</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@adityamusic" target="_blank">
+            <img class="profile-picture" src="channel-profile/adityamusic.jpg">
+          </a>
+        </div>
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=jOst7Trpj7o" target="_blank">
+            <p class="video-title">Break Up Video Song ( Telisiney Na Nuvvey) | Arjun Reddy Video Songs | Vijay Deverakonda | Shalini</p>
+          </a>
+          <a href="https://www.youtube.com/@adityamusic" target="_blank">
+            <p class="video-author">Aditya Music India</p>
+          </a>
+          <p class="video-stats">49M views  &middot; 6 years ago</p>
+        </div>
+      </div>
+     </div>
+     <div class="video-preview">
+      <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+        <!-- <a href="https://www.youtube.com/watch?v=pfQlEHQKnqM" target="_blank">
+          <img class="thumbnail" src="youtube-images/arjunreddy-emitemitemito.webp"  >
+        </a> -->
+        <iframe class="thumbnail" src="https://www.youtube.com/embed/Fpm1QreFSDQ?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=pfQlEHQKnqM&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-time">4:13</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@adityamusic" target="_blank">
+            <img class="profile-picture" src="channel-profile/adityamusic.jpg">
+          </a>
+        </div>
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=pfQlEHQKnqM" target="_blank">
+            <p class="video-title">Emitemitemito Video Song | Arjun Reddy Video Songs | Vijay Deverakonda | Shalinir</p>
+          </a>
+          <a href="https://www.youtube.com/@adityamusic" target="_blank">
+            <p class="video-author">Aditya Music India</p>
+          </a>
+          <p class="video-stats">14M views &middot; 6 year ago</p>
+        </div>
+      </div>
+   </div>
+
+   <div class="video-preview">
+    <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+      <!-- <a href="https://www.youtube.com/watch?v=_oRB1hymO14" target="_blank">
+        <img class="thumbnail" src="youtube-images/mahabharatam-title-telugu.webp"  >
+      </a> -->
+      <iframe class="thumbnail" src="https://www.youtube.com/embed/_oRB1hymO14?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=_oRB1hymO14&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-time">2:04</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <a href="https://www.youtube.com/@unic_777" target="_blank">
+          <img class="profile-picture" src="channel-profile/mahabharatam-prof.jpg">
+        </a>
+      </div>
+      <div class="video-info">
+        <a href="https://www.youtube.com/watch?v=_oRB1hymO14" target="_blank">
+          <p class="video-title">Mahabharatam Title Song - తెలుగులో</p>
+        </a>
+        <a href="https://www.youtube.com/@unic_777" target="_blank">
+          <p class="video-author">Uni𝐜𝐨𝐫𝐧_777</p>
+        </a>
+        <p class="video-stats">1.7M views &middot; 3 years ago</p>
+      </div>
+    </div>
+   </div>
+   <div class="video-preview">
+    <div class="thumbnail-row" onmouseover="play(this)" onmouseout="pause(this)">
+      <!-- <a href="https://www.youtube.com/watch?v=BB5jK8CdAno" target="_blank">
+        <img class="thumbnail" src="youtube-images/mahabharat.webp"  >
+      </a> -->
+      <iframe class="thumbnail" src="https://www.youtube.com/embed/BB5jK8CdAno?si=oEJkhxQnYOCzZmB6&mute=1&loop=1&playlist=BB5jK8CdAno&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-time">30:12</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <a href="https://www.youtube.com/@starplus" target="_blank">
+          <img class="profile-picture" src="channel-profile/starplus.jpg">
+        </a>
+      </div>
+      <div class="video-info">
+        <a href="https://www.youtube.com/watch?v=BB5jK8CdAno" target="_blank">
+          <p class="video-title">
+            Mahabharat | Krishna On Battle Field Part 3
+          </p>
+        </a>
+        <a href="https://www.youtube.com/@starplus" target="_blank">
+          <p class="video-author">StarPlus</p>
+        </a>
+        <p class="video-stats">3.5M views &middot; 1 year ago</p>
+      </div>
+    </div>
+   </div>
+   
+  </div>
+
+  <!-- shorts -->
+  <div class="div-container">
+    <div class="header2">
+      <img class="short-icon" src="/youtube-images/youtube-shorts-icon.webp">
+      <div class="short-name">Shorts</div>
+      <div class=" x">✕</div>
+    </div>
+
+    <div class="main-shorts">
+      
+        <div class="video-outline">
+            <!-- <div class="video">
+              <a href="https://www.youtube.com/shorts/gmI29MWP0EY" target="_blank">
+                <img class="shorts"  src="/youtube-images/short1.jpg">
+              </a>  
+            </div> -->
+            <div class="video"  onmouseover="play(this)" onmouseout="pause(this)" >
+              <iframe height="100%" width="100%" class="video" src="https://www.youtube.com/embed/DyAuzd8w-90?si=lIFhZdq3931J5fPk&mute=0&loop=1&playlist=DyAuzd8w-90&controls=0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+              <div class="short-info-border">
+                <a href="https://www.youtube.com/watch?v=DyAuzd8w-90&list=TLGGh1U3IjFevk8xNTAyMjAyNA" target="_blank">
+                  <div class="short-info" >Rope of Love♥️ #krishnabhajan #krishnaconsciousness #kavyabudhiraja
+                  </div>
+                </a>  
+                <div class="dots">&#8942;</div>
+              </div>
+              <a href="https://www.youtube.com/watch?v=DyAuzd8w-90&list=TLGGh1U3IjFevk8xNTAyMjAyNA" target="_blank">
+                <div class="short-views">49K views</div>
+              </a>  
+
+            </div>
+            
+            
+        </div>
+        <div class="video-outline" >
+            <!-- <div class="video">
+              <a href="https://www.youtube.com/shorts/DyAuzd8w-90" target="_blank">
+                <img class="shorts"  src="/youtube-images/beingkrishna-damodar.webp">
+              </a>
+            </div> -->
+            <div class="video"  onmouseover="play(this)" onmouseout="pause(this)">
+              <iframe height="100%" width="100%" class="video" src="https://www.youtube.com/embed/kkD5Ubpymq0?si=lIFhZdq3931J5fPk&mute=0&loop=1&playlist=kkD5Ubpymq0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+
+              <div class="short-info-border" >
+                <a href="https://www.youtube.com/watch?v=kkD5Ubpymq0&list=TLGGsD0PHb2-WAIxNTAyMjAyNA&t=3s" target="_blank">
+                  <div class="short-info" >Happy Happy♥️ Full Video in Comments #janmashtami #krishnaconsciousness</div>
+                </a>
+                <div class="dots">&#8942;</div>
+              </div>
+              <a href="https://www.youtube.com/watch?v=kkD5Ubpymq0&list=TLGGsD0PHb2-WAIxNTAyMjAyNA&t=3s" target="_blank">
+                <div class="short-views">38K views</div>
+              </a>
+            </div>
+            
+            
+        </div>
+        <div class="video-outline v3" >
+            <!-- <div class="video v3">div3</div> -->
+            <div class="video v3"  onmouseover="play(this)" onmouseout="pause(this)" >
+              <iframe height="100%" width="100%" class="video v3" src="https://www.youtube.com/embed/CdmsTCLMxK0?&loop=1&mute=0&playlist=CdmsTCLMxK0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; loop;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" href="https://www.youtube.com/shorts/kkD5Ubpymq0" allowfullscreen loop="true" ></iframe>
+
+              <div class="short-info-border" >
+                <a href="https://www.youtube.com/watch?v=CdmsTCLMxK0&list=TLGG2lu5RsD3KAExNTAyMjAyNA&t=1s" target="_blank">
+                  <div class="short-info " >Arjun Reddy | Please Don’t Go | Vijay Devarakonda WhatsApp Status | 24 Edits |</div>
+                </a>
+                <div class="dots ">&#8942;</div>
+              </div>
+              <a href="https://www.youtube.com/watch?v=CdmsTCLMxK0&list=TLGG2lu5RsD3KAExNTAyMjAyNA&t=1s" target="_blank">
+                <div class="short-views ">272K views</div>
+              </a>
+            </div>
+            
+            <!-- <div class="short-info v3">short-info</div> -->
+            
+        </div>
+        <div class="video-outline v4">
+            <!-- <div class="video v4">div4</div> -->
+            <div class="video v4"  onmouseover="play(this)" onmouseout="pause(this)" >
+              <iframe height="100%" width="100%" class="video v4" src="https://www.youtube.com/embed/GOLZK2kL5I0?&loop=1&mute=0&playlist=GOLZK2kL5I0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; loop;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen ></iframe>
+
+              <div class="short-info-border" >
+                <a href="https://www.youtube.com/shorts/GOLZK2kL5I0" target="_blank">
+                  <div class="short-info" >Part-2 Radhakrishna holi status video💕😘hindi songs🔥#mallika Singh #sumedh mudgalkar</div>
+                </a>
+                <div class="dots">&#8942;</div>
+              </div>
+              <a href="https://www.youtube.com/shorts/GOLZK2kL5I0" target="_blank">
+                <div class="short-views">329K views</div>
+              </a>
+            </div>
+            
+            <!-- <div class="short-info v4">short-info</div> -->
+        </div>
+        <div class="video-outline v5">
+            <!-- <div class="video v5">div5</div> -->
+            <div class="video v5"  onmouseover="play(this)" onmouseout="pause(this)">
+              <iframe height="100%" width="100%" class="video v5 jsdemo" src="https://www.youtube.com/embed/7QJSWwLDbjQ?&loop=1&mute=0&playlist=7QJSWwLDbjQ&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; loop;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen ></iframe>
+
+              <div class="short-info-border v5" >
+                <a href="https://www.youtube.com/watch?v=7QJSWwLDbjQ&list=TLGGamPpA6kDlT4xNTAyMjAyNA" target="_blank">
+                  <div class="short-info " >KRISHNA GEETA SAAR | KARMA YOGA | MAHABHARAT | WhatsApp status | Arjun</div>
+                </a>
+                <div class="dots">&#8942;</div>
+              </div>
+              <a href="https://www.youtube.com/watch?v=7QJSWwLDbjQ&list=TLGGamPpA6kDlT4xNTAyMjAyNA" target="_blank">
+                <div class="short-views">474K views</div>
+              </a>
+            </div>
+            
+            <!-- <div class="short-info v5">short-info</div> -->
+        </div>
+        
+    </div>
+
+</div>
+<!-- shorts -->
+<!-- main-body-->
+
+
+<script src="youtube.js"></script>
+    </body>
+</html>

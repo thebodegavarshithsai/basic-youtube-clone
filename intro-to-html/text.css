@@ -1,0 +1,29 @@
+.p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: -10px;
+    line-height: 25px;
+    margin-top: 0px;
+}
+.p2 {
+    color: rgb(38, 35, 35);
+    font-family: arial;
+}
+.fa fa-youtube-play {
+    content: "\f16a";
+    margin-bottom: 0px;
+}
+.p4 {
+    background-color: rgb(201, 36, 36);
+    width: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+.sp1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

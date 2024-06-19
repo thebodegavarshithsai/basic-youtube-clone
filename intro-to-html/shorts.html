@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube shorts</title>
+    <style>
+        .div-container{
+            /* background-color: gray; */
+            /* height: 500px; */
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+        }
+        .header2{
+            height: 70px;
+            background-color: aliceblue;
+        }
+        .main-shorts{
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            justify-content: space-evenly;
+            column-gap: 20px;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        .video{
+            background-color: lightgray;
+            border-radius: 10px;
+            aspect-ratio: 9/16;
+            max-width: 226px;
+            
+            margin-bottom: 10px;
+            
+
+        }
+        @media (max-width: 550px) {
+            .main-shorts{
+                grid-template-columns:  1fr 1fr;
+            }
+            .v3,.v4,.v5{
+                display:none
+            }
+        }
+
+         @media (min-width: 551px) and (max-width: 750px) {
+            .main-shorts{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .v4,.v5{
+                display:none
+            }
+        }
+        @media (min-width: 751px) and (max-width: 999px)
+        {
+            .main-shorts{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            .v5{
+                display: none;
+            }
+        }
+        @media (min-width: 1000px) {
+            .main-shorts{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        } 
+        .short-info{
+            background-color: aqua;
+            height: 60px;
+        }
+        .shorts{
+           height: 100%;
+           width: 100%;
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-container">
+        <div class="header2">header</div>
+
+        <div class="main-shorts">
+            <!-- <div >
+                <div class="video">
+                  <img class="shorts"  src="/youtube-images/short1.jpg">
+                </div>
+                <div class="short-info">short-info</div>
+            </div> -->
+            <div >
+                <div class="video">
+                    <iframe class="video"  src="https://www.youtube.com/embed/kkD5Ubpymq0?si=lIFhZdq3931J5fPk&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" href="https://www.youtube.com/shorts/kkD5Ubpymq0" allowfullscreen></iframe>
+                </div>
+                <div class="short-info">short-info</div>
+            </div>
+            <div >
+                <div class="video v3">
+                    <iframe class="video"  src="https://www.youtube.com/embed/kkD5Ubpymq0?si=lIFhZdq3931J5fPk&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" href="https://www.youtube.com/shorts/kkD5Ubpymq0" allowfullscreen></iframe>
+                </div>
+                <div class="short-info v3">short-info</div>
+            </div>
+            <div >
+                <div class="video v4">div4</div>
+                <div class="short-info v4">short-info</div>
+            </div>
+            <div >
+                <div class="video v5">div5</div>
+                <div class="short-info v5">short-info</div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="drievijfde-wrapper portfolio-wrapper">
+        <div class="single-item singlevidjs drievijfde-padding" style="background-image:url(img/work-placeholder.png); background-position: center center; background-size: cover;">
+            <!-- <video loop preload="auto" id="portfolio-vid">
+                <source src="video/test reel_1.mp4" type="video/mp4">
+            </video>   -->
+            <div class="hover"  onmouseover="play()" onmouseout="pause()" style="display: inline-block;">
+                <iframe class="video jsdemo"  id="portfolio-vid" src="https://www.youtube.com/embed/kkD5Ubpymq0?si=lIFhZdq3931J5fPk&autoplay=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a href="#">
+            </div>
+            <!-- <iframe class="video singlevidjs"  id="portfolio-vid" src="https://www.youtube.com/embed/kkD5Ubpymq0?si=lIFhZdq3931J5fPk&autoplay=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" href="https://www.youtube.com/shorts/kkD5Ubpymq0" allowfullscreen></iframe>
+            <a href="#"> -->
+                <div class="metadata">
+                    Interior Lamps
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="childemo">
+        <p>1</p>
+        
+    </div>
+
+    
+<script>
+  
+let ele=document.querySelector(".childemo");
+console.log(ele.children[0].innerText)
+
+</script>
+    
+
+    
+</body>
+</html>

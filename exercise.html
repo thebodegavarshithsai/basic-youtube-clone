@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercises</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+        .in1 {
+            border-radius: 5px;
+            border-color: rgb(189, 175, 175);
+            border-style: solid;
+            border-width: 1px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 9px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .in2 {
+            width: 300px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 9px;
+            border-width: 1px;
+            border-radius: 100px;
+            border-color: rgb(250, 247, 247);
+            border-style: solid;
+            box-shadow: 0.5px 0.1px 5px 1px rgb(226, 222, 222);
+        }
+        .p1 {
+            color: rgb(94, 90, 90);
+            margin-bottom: -15px;
+        }
+        .in3 {
+            margin-top:0px;
+        }
+        .p2 {
+            color: rgb(94, 90, 90);
+            font-size: 12px;
+        }
+        .b1 {
+            text-align: center;
+            background-color: rgb(81, 106, 206);
+            color: white;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-color: none;
+            border-radius: 30px;
+            border-style: solid;
+            border-width: 0px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            
+        }
+        .in4 {
+            border-color:black;
+            border-width: 0px;
+            width: 150px;
+            padding-left: 5px;
+            vertical-align:middle;
+        }
+        .b2 {
+             font-size: 10px;
+             border-radius: 20px;
+             border-color:  rgb(86, 135, 203);
+             border-style: solid;
+             background-color: rgb(86, 135, 203);
+             color: white;
+             padding-top: 2px;
+             padding-bottom: 2px;
+             vertical-align: middle;
+             cursor: pointer;
+        }
+        .cat {
+            width:40px;
+            border-radius:100%;
+            vertical-align:middle;
+        }
+        .p3 {
+            width: 190px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .logo {
+            width: 100px;
+            display: block;
+            text-align: center;
+            margin-left: 90px;
+            padding-left: 10px;
+        }
+        .signup1 {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 6px;
+            border-radius: 7px;
+            border-color: rgb(204, 197, 197);
+            border-style: solid;
+            padding-right:0px;
+        }
+        .signup2 {
+            display: block;
+            margin-top: 8px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 6px;
+            border-radius: 7px;
+            border-color: rgb(204, 197, 197);
+            border-style: solid;
+            padding-right: 176px;
+        }
+        .b4 {
+            text-align: center;
+            background-color: rgb(81, 106, 206);
+            color: white;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-color: none;
+            border-radius: 7px;
+            border-style: solid;
+            border-width: 0px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+        .b4:active {
+            transform: translateY(1px);
+        }
+        .p4 {
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        .uber1 {
+            display: block;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-bottom: 5px;
+            padding-left: 7px;
+            padding-right: 80px;
+            background-color: rgb(240, 240, 240);
+            border: none;
+        }
+        .uber2 {
+            display: block;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 7px;
+            padding-right: 80px;
+            background-color: rgb(240, 240, 240);
+            border: none;
+        }
+        .uber3 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+            vertical-align: middle;
+
+        }
+        .uber3:active {
+          transform: translateY(4px);
+        }
+        .uber4 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            padding-top: 6px;
+            padding-bottom: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border: none;vertical-align: middle;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .div1 {
+            background-color: rgb(36, 35, 35);
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-top: 20px;
+            padding-left: 15px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .h21 {
+            color: white;
+        }
+        .div2 {
+            width: 400px;
+            border-color: black;
+            border-width: 3px;
+            display: inline-block;
+        }
+        .cat2 {
+            width: 110px;
+
+        }
+        .friend {
+            background-color: rgb(81, 106, 206);
+            color: white;
+            border: none;
+            margin-top: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 6px;
+            padding-right: 6px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+            cursor: pointer;
+        }
+        .friend:active {
+            transform: translateY(1.5px);
+        }
+        .div21 {
+            display: inline-block;
+            box-shadow: 1px 1px 1px 1px rgb(194, 193, 193);
+        }
+        .div22 {
+            display: inline-block;
+            box-shadow: 1px 1px 1px 1px rgb(194, 193, 193);
+            border-color: red;
+            margin-left: 5px;
+        }
+        .pic {
+            height: 88px;
+            width: 125px;
+        }
+        .search {
+            display: inline-block;
+            box-shadow: 1px 1px 3px 3px rgb(235, 233, 233);
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-top: 6px;
+            padding-bottom: 6px;border-radius: 4px;
+            
+        }
+        .bgoogle {
+            margin-top: 20px;
+            margin-left: 45px;
+            border: none;
+            padding: 7px;
+            font-size: 11px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+        }
+        
+     </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <input type="text" placeholder="Search" class="in1">
+        <input type="text" placeholder="Search Google or type a URL" class="in2">
+        <p class="p1">Email</p><br>
+        <input class="in3">
+        <p class="p2">By clicking Agree & join, you agree to the Privacy Policy.</p>
+        <button class="b1">Agree & Join</button>
+        <br>
+        <div class="search">
+            <img src="cat1.jpg" class="cat">
+            <input type="text" placeholder="What's happening?" class="in4">
+            <button class="b2">Tweet</button><br>
+        </div><br>
+        <p class="p3">Thanks for chatting with our customer support.Would you like to take our quick survey?</p>
+        <button>Yes</button><button style="margin-left: 5px;">No</button>
+        <div class="google">
+            <img src="Google_logo_logotype.png" class="logo">
+        <input type="text" placeholder="Search Google or type a URL" class="in2">
+        <br>
+        <button class="bgoogle" style="margin-right: 5px;">Google Search</button>
+        <button class="bgoogle" style="margin-left: 0px;">I'm Feeling Lucky</button>
+        </div>
+        <br>
+        <p>sign up form</p>
+        <input class="signup1" placeholder="First name" type="text">
+        <input class="signup1" placeholder="Last name" type="text">
+        <input class="signup2" placeholder="Email" type="text">
+        <button class="b4">Sign Up</button>
+        <h2>Uber</h2>
+        <p class="p4">Request a ride now</p>
+        <input class="uber1" placeholder="Enter pickup location">
+        <input class="uber2" placeholder="Enter destination">
+        <button class="uber3">Request now</button>
+        <button class="uber4">Schedule for later</button>
+        <br>
+        <div class="div1">
+            <h2 class="h21">Install YouTube Music</h2>
+            <p style="color: rgb(176, 172, 172); width: 345px;">Add YouTube Music to your desktop for quick and easy access</p>
+        </div>
+        <br>
+        <div class="div2">
+           <div class="div21">
+            <img src="cat1.jpg" class="cat2">
+            <h4 style="margin-top: 0px; margin-bottom: 0px; font-size: 14px; padding-left: 3px;">Oliver</h4>
+            <p style="color: rgb(83, 80, 80); margin-top: 0px; margin-bottom: 0px; font-size: 14px; padding-left: 3px;">2 mutual friends</p>
+            <button class="friend">Add Friend</button>
+           </div>
+           <div class="div22">
+            <img src="pic1.jpg" class="pic">
+            <h4 style="margin-top: 0px; margin-bottom: 0px; font-size: 14px; padding-left: 3px;">Mimi</h4>
+            <p style="color: rgb(83, 80, 80); margin-top: 0px; margin-bottom: 0px; font-size: 14px; padding-left: 3px;">3 mutual friends</p>
+            <button class="friend">Add Friend</button>
+           </div>
+        </div>
+        <br>
+        <h2>creating grid</h2>
+        <div style="
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             grid-template-rows: 1fr 1fr;
+             height: 220px;
+             column-gap: 10px;
+             row-gap: 10px;
+             border-color: black;
+             border-style: solid;
+             align-items: center;
+             justify-content: space-around;
+
+             ">
+           
+            <div style=" height: 100px;">grid1</div>
+            <div style="background-color:aqua;height: 100px;">grid2</div>
+            <div style="background-color:blueviolet;height: 100px;">grid3</div>
+            <div style="background-color:cadetblue; height: 100px;">grid4</div>
+            <div style="background-color:yellowgreen;height: 100px;">grid5</div>
+            <div style="background-color:wheat;height: 100px;">grid6</div>
+        </div>
+        <br><br><br>
+        <h2>flex</h2>
+        <div style="display: flex;
+        flex-direction: row;">
+            <div style="background-color: lightpink;">div 1</div>
+            <div style="background-color: lightblue;">div 2</div>
+        </div>
+        <div style="display: flex;
+        margin-top: 10px;
+        flex-direction: row;">
+            <div style="background-color: lightpink;">div 1</div>
+            <div style="background-color: lightblue; flex: 1;">flex <p>text</p></div>
+        </div>
+        <div style="display: flex;
+        margin-top: 10px;
+        flex-direction: row;">
+            <div style="background-color: lightpink;">div 1</div>
+            <div style="background-color: lightblue; flex: 1;">flex <p>text</p></div>
+            <div style="background-color: lightpink; flex: 2;">flex 2</div>
+        </div>
+        <div style="display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        justify-content: center;
+        ">
+            <div style="background-color: lightpink; width: 100px;">div 1</div>
+            <div style="background-color: lightblue; width: 100px;">flex 1 <p>text</p></div>
+            <div style="background-color: lightpink; width: 100px;">flex 2</div>
+        </div>
+        <div style="display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        justify-content: space-between;
+        
+        ">
+            <div style="background-color: lightpink; width: 100px;">div 1</div>
+            <div style="background-color: lightblue; width: 100px;">flex 1 <p>text</p></div>
+            <div style="background-color: lightpink; width: 100px;">flex 2</div>
+        </div>
+        <div style="display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        border-width: 2px;
+        height: 100px;
+        border-color: black;
+        border-style: solid;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+        ">
+            <div style="background-color: lightpink; width: 100px;">div 1</div>
+            <div style="background-color: lightblue; width: 100px;">flex 1</div>
+            <div style="background-color: lightpink; width: 100px;">flex 2</div>
+        </div>
+        <br style="margin-top: 100px;">
+        <div style="display: flex;
+          flex-direction: column;
+          height: 120px;
+          border-color:rgb(227, 226, 226);
+          border-style: solid;font-family: Arial,'Times New Roman';
+          font-size: large;
+          width: 300px;border-radius: 10px;
+         ">
+            <div style="width: 280px;
+              height: 30px;margin-top: 5px;
+              margin-left: 7px;
+              display:flex;
+              flex-direction: row;
+              align-items: center;
+            ">
+                <div style="width: 250px;">Home</div>
+                <div style="background-color: rgb(48, 115, 208);
+                color: white;width: 40px;text-align: center;
+                border-radius: 15px;
+                padding-top: 2px;padding-bottom: 2px;">14</div>
+            </div>
+            <div style="width: 280px;
+              height: 30px;margin-top: 5px;
+              margin-left: 7px;
+              display:flex;
+              flex-direction: row;
+              align-items: center;
+            ">
+                <div style="width: 250px;">Notifications</div>
+                <div style="background-color: rgb(48, 115, 208);
+                color: white;width: 30px;text-align: center;
+                border-radius: 15px;
+                padding-top: 2px;padding-bottom: 2px;">3</div>
+            </div>
+            <div style="width: 280px;
+              height: 30px;margin-top: 5px;
+              margin-left: 7px;
+              
+              display:flex;
+              flex-direction: row;
+              align-items: center;
+            ">
+                <div style="width: 250px;">Messages</div>
+                <div style="background-color: rgb(48, 115, 208);
+                color: white;width: 30px;text-align: center;
+                border-radius: 15px;
+                padding-top: 2px;padding-bottom: 2px;">5</div>
+            </div>
+            
+        </div>
+        <div style="display:flex;
+            flex-direction:row;justify-content: space-between;
+            margin-top: 20px;
+            border:none;
+            align-items: center;
+            height: 45px;
+            background-color: rgb(128, 68, 171);
+        ">
+          <div style="color: white;margin-left: 20px;width: 100px;margin-right: 40px;
+            ">Home</div>
+          <div style="margin-right: 20px;width:500px;
+          display: flex;">
+            <input type="text" placeholder="Search" style="flex: 1;
+            height: 25px;padding-left: 10px;border-radius: 35px;
+            border: none;width: 0;">
+          </div> 
+          <div style="width: 100px;">
+            <button style="background: transparent;margin-left: 20px;cursor: pointer;
+            border-color: white;border-style: solid;
+            padding: 6px;margin-right: 5px;color: white;">Download</button>
+          </div>    
+        </div>
+        <div style="display: grid;
+            grid-template-columns: 100px 100px;
+            margin-top: 50px;
+            text-align: center;
+        ">
+            <div style="background-color: aquamarine;">div1</div>
+            <div style="background-color:lightpink;">div2</div>
+        </div>
+        <div style="display: grid;
+            grid-template-columns: 100px 1fr;
+            margin-top: 50px;
+            text-align: center;
+        ">
+            <div style="background-color: aquamarine;">100px</div>
+            <div style="background-color:lightpink;">1fr</div>
+        </div>
+        <div style="display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 50px;
+            height: 200px;
+            column-gap: 20px;
+            row-gap: 40px;
+            text-align: center;
+        ">
+            <div style="background-color: aquamarine;">1fr</div>
+            <div style="background-color:lightpink;">1fr</div>
+            <div style="background-color: aquamarine;">1fr</div>
+            <div style="background-color:lightpink;">1fr</div>
+            <div style="background-color: aquamarine;">1fr</div>
+            <div style="background-color:lightpink;">1fr</div>
+        </div>
+        <div style="display: flex;
+            flex-direction: row;
+            margin-top: 40px;">
+            <div style="background-color: lightblue;
+            width: 100px;">100px</div>
+            <div style="background-color: lightpink;
+            flex:1">flex: 1</div>
+        </div>
+        <div style="display: flex;
+            flex-direction: row;
+            margin-top: 40px;">
+            <div style="background-color: lightblue;
+            width: 100px;">100px</div>
+            <div style="background-color: lightpink;
+            flex: 1;">flex:1</div>
+            <div style="background-color: lightblue;
+            flex: 2;">flex:2</div>
+        </div>
+
+        <div style="display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+            height: 70px;
+            border-color: grey;
+            border-width: 1px;
+            border-style: solid;
+            justify-content: center;">
+        <div style="background-color: lightblue;
+        width: 100px;">100px</div>
+        <div style="background-color: lightpink;
+        width: 100px;">100px</div>
+        <div style="background-color: lightblue;
+        width: 100px;">100px</div>
+    </div>
+    <div style="display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        height: 70px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        justify-content: space-between;">
+        <div style="background-color: lightblue;
+        width: 100px;">100px</div>
+        <div style="background-color: lightpink;
+        width: 100px;">100px</div>
+        <div style="background-color: lightblue;
+        width: 100px;">100px</div>
+    </div>
+    <div style="display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        height: 70px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        justify-content: space-between;
+        align-items: center;">
+    <div style="background-color: lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color: lightpink;
+    width: 100px;">100px</div>
+    <div style="background-color: lightblue;
+    width: 100px;">100px</div>
+</div>
+<br><br>
+<a href="https://www.youtube.com/shorts/7oXkoVFexxI" target="_blank"><img src="channel-profile/beingkrishna.jpg"></a>
+    </body>
+</html>

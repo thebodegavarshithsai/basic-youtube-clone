@@ -1,0 +1,43 @@
+.a1 {
+    color: rgb(11, 97, 172);
+ }
+ .a1:hover {
+  color: orangered;
+ }
+ .p1 {
+    color: rgb(0,118,0);
+    font-weight: bold;
+    margin-top: -10px;
+ }
+ .b1 {
+    background-color: rgb(255,216,20);
+    height: 33px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    
+ }
+ .b2 {
+    background-color: rgb(255,164,28);
+    color: black;
+    height: 33px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    box-shadow: 3px 3px 3px black
+ }
+ .b2:hover {
+  background-color: green;
+  
+ }
+ .b2:active {
+  background-color: blue;
+ }
+ .b1:hover {
+  box-shadow: 3px 3px 3px black
+ }
